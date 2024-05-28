@@ -70,20 +70,33 @@ const AboutSection = () => {
   };
 
   return (
-    <section>
-      <div className="text-lightest">
-        <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-          <Image src="/images/computer.jpg" width={500} height={500} />
-          <div className="mt-4 md:mt-0 text-left flex-col h-full max-h-500">
+    //! Dissapearing about section on small screens
+    <section className="z-10" id="about">
+      <div className="text-lightest z-10">
+        <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 sm:z-10">
+          <Image
+            src="/images/computer.jpg"
+            width={500}
+            height={500}
+            className="z-10"
+          />
+          <div className="mt-4 md:mt-0 text-left flex-col h-full max-h-500 z-10">
             <h2 className="text-4xl font-bold text-lightest mb-4">About Me</h2>
             <p className="text-base lg:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              reprehenderit eligendi ullam, perspiciatis eaque fugiat aliquam
-              quae aperiam dicta voluptas maiores tempora optio quam et nostrum
-              excepturi accusantium velit quidem recusandae. Obcaecati
-              doloremque soluta, quo quos est quod aliquam, at maxime magni
-              harum iusto tenetur fugiat ipsa et eligendi dolorum in ipsam. Hic,
-              tempora alias.
+              Since I was eight years old, I have had a profound connection with
+              computers. My fascination with video games led me to explore how
+              they worked, fueling my interest in both art and math. During high
+              school, I discovered the harmony between art and math through
+              coding. I completed various coding courses, including Java,
+              Android Development, Web Development, C#, and Unity Game
+              Development. The summer before my senior year, I participated in
+              an online web development bootcamp, which solidified my passion
+              for coding. Since then, I have dedicated a significant portion of
+              my free time to exploring code and learning new technologies.
+              Currently, I am enrolled in the Software Development program at
+              Tooele Technical College. I am committed to continuing my journey
+              in software development, constantly learning and growing as a
+              developer.
             </p>
             <div className="flex flex-row justify-start mt-8">
               <TabButton

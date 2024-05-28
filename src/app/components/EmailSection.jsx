@@ -26,7 +26,7 @@ const EmailSection = () => {
     };
 
     const response = await fetch(endpoint, options);
-    const resData = await response.json();
+    // const resData = await response.json();
     // console.log(response);
     if (response.status === 200) {
       console.log("Message sent.");
@@ -34,25 +34,26 @@ const EmailSection = () => {
     }
   };
   return (
-    <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4">
-      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-custom2 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
-      <div>
-        <h5 className="text-xl font-bold text-lightest my-2">Let's Connect</h5>
-        <p className="text-light mb-4 max-w-md">
+    <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 z-10">
+      <div className="z-10">
+        <h5 className="text-xl font-bold text-lightest my-2 z-10">
+          Let's Connect
+        </h5>
+        <p className="text-light mb-4 max-w-md z-10">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ratione
           similique incidunt nam consequuntur explicabo eum voluptatum,
           excepturi quaerat sint ea magnam! Harum, minus distinctio.
         </p>
-        <div className="socials flex flex-row gap-2">
+        <div className="socials flex flex-row gap-2 z-10">
           <Link href="/">
-            <Image src={GithubIcon} alt="Github Icon" />
+            <Image src={GithubIcon} alt="Github Icon" className="z-10" />
           </Link>
           <Link href="/">
-            <Image src={LinkedinIcon} alt="Linkedin Icon" />
+            <Image src={LinkedinIcon} className="z-10" alt="Linkedin Icon" />
           </Link>
         </div>
       </div>
-      <div>
+      <div className="z-10">
         <form action="" className="flex flex-col" onSubmit={handleSubmit}>
           <div className="mb-6">
             <label
@@ -66,7 +67,7 @@ const EmailSection = () => {
               type="email"
               id="email"
               required
-              className="bg-bg border border-dark placeholder-light text-gray-100 text-sm rounded-lg block w-full p-2.5"
+              className="bg-bg border border-dark placeholder-med text-gray-100 text-sm rounded-lg block w-full p-2.5"
               placeholder="johnsmith@email.com"
             />
           </div>
@@ -74,7 +75,7 @@ const EmailSection = () => {
             <label
               htmlFor="subject"
               type="text"
-              className="text-lightest block mb-3 text-sm font-medium"
+              className="text-lightest block mb-3 text-sm font-medium z-10"
             >
               Subject
             </label>
@@ -82,15 +83,15 @@ const EmailSection = () => {
               name="subject"
               type="text"
               id="subject"
-              required //! Make placeholder a little darker
-              className="bg-bg border border-dark placeholder-light text-gray-100 text-sm rounded-lg block w-full p-2.5"
+              required
+              className="bg-bg border border-dark placeholder-med text-gray-100 text-sm z-10 rounded-lg block w-full p-2.5"
               placeholder="Reaching out!"
             />
           </div>
           <div className="mb-6">
             <label
               htmlFor="message"
-              className="text-lightest block text-sm mb-3 font-medium"
+              className="text-lightest block text-sm z-10 mb-3 font-medium"
             >
               Message
             </label>
@@ -98,7 +99,7 @@ const EmailSection = () => {
             <textarea
               name="message"
               id="message"
-              className="bg-bg border border-dark placeholder-light text-gray-100 text-sm rounded-lg block w-full p-2.5"
+              className="bg-bg border border-dark placeholder-med text-gray-100 z-10 text-sm rounded-lg block w-full p-2.5"
               placeholder="Leave your message here..."
             ></textarea>
           </div>
@@ -109,7 +110,7 @@ const EmailSection = () => {
             Send Message
           </button>
           {emailSubmitted && (
-            <p className="text-custom2 text-sm mt-2">
+            <p className="text-custom2z-10 text-sm mt-2 z-10">
               Email Sent Successfully!
             </p>
           )}

@@ -3,12 +3,18 @@ import React from "react";
 import Image from "next/image";
 
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <section>
+    <section className="">
       <div className="grid grid-cols-1 sm:grid-cols-12">
-        <div className="col-span-7 place-self-center text-center sm:text-left">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duraction: 0.5 }}
+          className="col-span-7 place-self-center text-center sm:text-left z-10"
+        >
           <h1 className="text-lightest mb-4 text-4xl lg:text-6xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-br from-custom1 to-custom2">
               Hello, I'm{" "}
@@ -31,9 +37,8 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-light text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia minima
-            molestias vitae!
+          <p className="text-light text-base sm:text-lg mb-6 lg:text-xl z-10">
+            Welcome to my Portfolio! Feel free to look around, or contact me!
           </p>
           <div className="">
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-custom1 to-custom2 hover:bg-light text-dark">
@@ -45,9 +50,14 @@ const HeroSection = () => {
               </span>
             </button>
           </div>
-        </div>
+        </motion.div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
-          <div className="rounded-full bg-dark w-[250px] h-[250px] lg:w-[370px] lg:h-[370px] relative">
+          <motion.div
+            initial={{ scaleY: -1, scale: 0.25 }}
+            animate={{ scaleY: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            className="rounded-full bg-dark w-[250px] h-[250px] lg:w-[370px] lg:h-[370px] relative z-10"
+          >
             <Image
               src="/images/hero-pic.png"
               alt="hero image"
@@ -55,7 +65,7 @@ const HeroSection = () => {
               width={300}
               height={0}
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

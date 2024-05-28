@@ -20,11 +20,11 @@ const navLinks = [
     path: "#contact",
   },
 ];
-// https://www.youtube.com/watch?v=Kb1f5bvF6f4 1:19:00
+// https://www.youtube.com/watch?v=Kb1f5bvF6f4 2:18:00
 const Navbar = () => {
   const [navBarOpen, setNavBarOpen] = useState(false);
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 bg-bg bg-opacity-100">
+    <nav className="fixed top-0 left-0 right-0 z-20 bg-bg bg-opacity-100">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
           href={"/"}
