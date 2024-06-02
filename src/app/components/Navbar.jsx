@@ -3,8 +3,10 @@ import React from "react";
 import { useState } from "react";
 import Link from "next/link";
 import NavLink from "./Navlink";
+import { motion, AnimatePresence } from "framer-motion";
 import { Bars3Icon, XMarkIcon, XmarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
+import { duration } from "moment";
 
 const navLinks = [
   {
@@ -59,7 +61,9 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-      {navBarOpen && <MenuOverlay links={navLinks} />}
+      <AnimatePresence>
+        {navBarOpen && <MenuOverlay links={navLinks} />}
+      </AnimatePresence>
     </nav>
   );
 };

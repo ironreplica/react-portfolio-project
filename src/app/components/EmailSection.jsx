@@ -34,21 +34,25 @@ const EmailSection = () => {
     }
   };
   return (
-    <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 z-10">
+    <section
+      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 z-10"
+      id="contact"
+    >
       <div className="z-10">
         <h5 className="text-xl font-bold text-lightest my-2 z-10">
           Let's Connect
         </h5>
         <p className="text-light mb-4 max-w-md z-10">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ratione
-          similique incidunt nam consequuntur explicabo eum voluptatum,
-          excepturi quaerat sint ea magnam! Harum, minus distinctio.
+          Interested in discussing opportunities or have any inquiries? Let's
+          connect! Reach out to explore how my skills can benefit your project
+          or to discuss potential collaborations. Looking forward to hearing
+          from you!
         </p>
         <div className="socials flex flex-row gap-2 z-10">
-          <Link href="/">
+          <Link href="https://github.com/ironreplica">
             <Image src={GithubIcon} alt="Github Icon" className="z-10" />
           </Link>
-          <Link href="/">
+          <Link href="https://www.linkedin.com/in/trevor-childs-725608259/">
             <Image src={LinkedinIcon} className="z-10" alt="Linkedin Icon" />
           </Link>
         </div>

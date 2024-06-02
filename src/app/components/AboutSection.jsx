@@ -11,17 +11,29 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <div className="flex">
-        <ul className="list-disc pl-2">
-          <li>Next.js</li>
-          <li>Express</li>
-          <li>PostgreSQL</li>
+        <ul className="list-disc px-4">
+          <li>NextJS</li>
           <li>React</li>
+          <li>Tailwind</li>
+          <li>MongoDB</li>
+          <li>NodeJS</li>
+          <li>HTML5</li>
+        </ul>
+        <ul className="list-disc px-4">
+          <li>CSS</li>
           <li>Javascript</li>
           <li>Java</li>
-        </ul>
-        <ul className="list-disc pl-2">
+          <li>XML</li>
           <li>C#</li>
-          <li>Unity</li>
+          <li>Python</li>
+        </ul>
+        <ul className="list-disc px-4">
+          <li>Unity Game Engine</li>
+          <li>Blender</li>
+          <li>Visual Studio</li>
+          <li>Visual Studio Code</li>
+          <li>Android Studio</li>
+          <li>Raspberry Pi</li>
         </ul>
       </div>
     ),
@@ -32,6 +44,7 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>Tooele Technical College : Software Development</li>
+        <li>Codes to success : Summer Bootcamp</li>
         <li>Stansbury High School : High School Diploma</li>
       </ul>
     ),
@@ -42,7 +55,10 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>Codes To Success : Web Developer</li>
-        <li>Unity Game Programmer</li>
+        <li className="mb-4">Certiport Unity Game Programmer</li>
+        <footer className=" text-light text-sm">
+          <p>Feel free to contact me for authenticity of my certifications.</p>
+        </footer>
       </ul>
     ),
   },
@@ -51,7 +67,7 @@ const TAB_DATA = [
     id: "experience",
     content: (
       <ul className="list-disc pl-2">
-        <li>Hobbiest Web Developer 2 years</li>
+        <li>Hobbiest Full Stack Developer ~1 years</li>
         <li>Hobbiest Unity Indie Game Developer 2 years</li>
         <li>Hobbiest Java Android Developer 1 years</li>
       </ul>
@@ -70,12 +86,11 @@ const AboutSection = () => {
   };
 
   return (
-    //! Dissapearing about section on small screens
-    <section className="z-10" id="about">
-      <div className="text-lightest z-10">
-        <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 sm:z-10">
+    <section className="z-15" id="about">
+      <div className="text-lightest z-15">
+        <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 sm:z-15 relative">
           <Image
-            src="/images/computer.jpg"
+            src="/coding-bro.svg" // https://storyset.com/illustration/hand-coding/bro
             width={500}
             height={500}
             className="z-10"

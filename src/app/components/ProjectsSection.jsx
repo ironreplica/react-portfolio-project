@@ -25,42 +25,42 @@ const projectsData = [
     tag: ["All", "Games"],
     previewUrl: "https://ironreplica.itch.io/blood-moon",
   },
-  {
-    id: 3,
-    title: "Title",
-    description: "Description",
-    image: "/images/projects/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 4,
-    title: "Title",
-    description: "Description",
-    image: "/images/projects/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 5,
-    title: "Title",
-    description: "Description",
-    image: "/images/projects/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 6,
-    title: "Title",
-    description: "Description",
-    image: "/images/projects/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
+  // {
+  //   id: 3,
+  //   title: "Title",
+  //   description: "Description",
+  //   image: "/images/projects/1.png",
+  //   tag: ["All", "Web"],
+  //   gitUrl: "/",
+  //   previewUrl: "/",
+  // },
+  // {
+  //   id: 4,
+  //   title: "Title",
+  //   description: "Description",
+  //   image: "/images/projects/1.png",
+  //   tag: ["All", "Web"],
+  //   gitUrl: "/",
+  //   previewUrl: "/",
+  // },
+  // {
+  //   id: 5,
+  //   title: "Title",
+  //   description: "Description",
+  //   image: "/images/projects/1.png",
+  //   tag: ["All", "Web"],
+  //   gitUrl: "/",
+  //   previewUrl: "/",
+  // },
+  // {
+  //   id: 6,
+  //   title: "Title",
+  //   description: "Description",
+  //   image: "/images/projects/1.png",
+  //   tag: ["All", "Web"],
+  //   gitUrl: "/",
+  //   previewUrl: "/",
+  // },
 ];
 
 const ProjectsSection = () => {
@@ -82,15 +82,14 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section className="z-10 relative">
-      <motion.h2
-        animate={{ scale: 1 }}
-        duration={{}}
-        re
-        className="text-center text-4xl font-bold text-lightest mt-4 z-20"
+    <section id="projects" className="z-10 relative mb-20">
+      <h2
+        // duration={{ 0.}}
+
+        className="text-center text-4xl font-bold text-lightest mt-4 z-20 top-[40px]"
       >
         My Projects
-      </motion.h2>
+      </h2>
       <div className="text-lightest flex flex-row justify-center items-center gap-2 pt-6 z-10">
         <ProjectTag
           onClick={handleTagChange}
@@ -108,7 +107,7 @@ const ProjectsSection = () => {
           isSelected={tag === "Games"}
         />
       </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12 z-10">
+      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12 z-10 mt-5">
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}
