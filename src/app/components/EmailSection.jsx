@@ -40,13 +40,13 @@ const EmailSection = () => {
     >
       <div className="z-10">
         <h5 className="text-xl font-bold text-lightest my-2 z-10">
-          Let's Connect
+          Let&apos;s Connect
         </h5>
         <p className="text-light mb-4 max-w-md z-10">
-          Interested in discussing opportunities or have any inquiries? Let's
-          connect! Reach out to explore how my skills can benefit your project
-          or to discuss potential collaborations. Looking forward to hearing
-          from you!
+          Interested in discussing opportunities or have any inquiries?
+          Let&apos;s connect! Reach out to explore how my skills can benefit
+          your project or to discuss potential collaborations. Looking forward
+          to hearing from you!
         </p>
         <div className="socials flex flex-row gap-2 z-10">
           <Link href="https://github.com/ironreplica">
