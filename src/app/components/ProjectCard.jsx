@@ -47,7 +47,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
           <div className="text-center pts-5 lock my-auto justify-end">
             <h5 className="text-xl font-semibold text-cenater">{title}</h5>
 
-            <p className="sm:mb-3">{description}</p>
+            <p className="  sm: pb-3">{description}</p>
           </div>
           <div className=" flex  justify-center">
             <Link

@@ -20,22 +20,24 @@ const HeroSection = () => {
               Hello, I&apos;m{" "}
             </span>
             <br />
-            <TypeAnimation
-              sequence={[
-                // Same substring at the start will only be typed out once, initially
-                "Trevor",
-                2000, // wait 1s before replacing "Mice" with "Hamsters"
-                "a Web Developer",
-                1500,
-                "a Mobile Devloper",
-                1500,
-                "a Game Developer",
-                1500,
-              ]}
-              wrapper="span"
-              speed={50}
-              repeat={Infinity}
-            />
+            <div className="h-[90px] w-fit flex mx-auto my-auto">
+              <TypeAnimation
+                sequence={[
+                  // Same substring at the start will only be typed out once, initially
+                  "Trevor",
+                  2000, // wait 1s before replacing "Mice" with "Hamsters"
+                  "a Web Developer",
+                  1500,
+                  "a Mobile Devloper",
+                  1500,
+                  "a Game Developer",
+                  1500,
+                ]}
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+              />
+            </div>
           </h1>
           <p className="text-light text-base sm:text-lg mb-6 lg:text-xl z-10">
             Welcome to my Portfolio! Feel free to look around, or contact me!

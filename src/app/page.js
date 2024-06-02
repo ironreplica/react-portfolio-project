@@ -9,8 +9,8 @@ import ParticlesComponent from "./components/config/ParticlesComponent";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-[#0d1117] z-9999">
-      <ParticlesComponent className=" -z-1  " />
+    <main className="flex min-h-screen flex-col bg-[#0d1117] z-9999 justify-center mx-auto">
+      <ParticlesComponent className="-z-1" />
 
       <Navbar className="z-1" />
       <div class="container mt-24 mx-auto px-12 py-4 z-1">
