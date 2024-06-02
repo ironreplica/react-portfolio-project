@@ -22,7 +22,7 @@ export default function EmailTemplate({
   return (
     <Html>
       <Head />
-      <Preview>Confirmation for "{subject}"</Preview>
+      <Preview>Confirmation for {subject}</Preview>
       <Tailwind
         config={{
           theme: {
