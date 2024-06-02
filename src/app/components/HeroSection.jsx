@@ -20,12 +20,11 @@ const HeroSection = () => {
               Hello, I&apos;m{" "}
             </span>
             <br />
-            <div className="h-[90px] w-fit flex mx-auto my-auto">
+            <div className="h-[90px] w-fit flex mx-auto my-auto md:mx-0 md:my-0">
               <TypeAnimation
                 sequence={[
-                  // Same substring at the start will only be typed out once, initially
                   "Trevor",
-                  2000, // wait 1s before replacing "Mice" with "Hamsters"
+                  2000,
                   "a Web Developer",
                   1500,
                   "a Mobile Devloper",
