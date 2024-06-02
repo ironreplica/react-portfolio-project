@@ -34,14 +34,11 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
 
   return (
     <div>
-      <motion.div //! Animate bg change?
+      <motion.div
         variants={cardVariants}
         initial={{ rotateZ: 0, scale: 1, y: 0 }}
-        // initial={{ scale: 0.9 }}
         transition={{ duration: 1 }}
-        // whileHover={{ scale: 1.1 }}
         whileHover="hover"
-        // transition={{ duration: 0.2, repeat: Infinity, repeatType: "reverse" }}
         className="h-40 md:h-72 rounded-t-xl flex-col relative group rounded-b-xl w-[100%]"
         style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
       >

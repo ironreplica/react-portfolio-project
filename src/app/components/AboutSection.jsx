@@ -62,17 +62,17 @@ const TAB_DATA = [
       </ul>
     ),
   },
-  {
-    title: "Experience",
-    id: "experience",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>Hobbiest Full Stack Developer ~1 years</li>
-        <li>Hobbiest Unity Indie Game Developer 2 years</li>
-        <li>Hobbiest Java Android Developer 1 years</li>
-      </ul>
-    ),
-  },
+  // {
+  //   title: "Experience",
+  //   id: "experience",
+  //   content: (
+  //     <ul className="list-disc pl-2">
+  //       <li>Hobbiest Full Stack Developer ~1 years</li>
+  //       <li>Hobbiest Unity Indie Game Developer 2 years</li>
+  //       <li>Hobbiest Java Android Developer 1 years</li>
+  //     </ul>
+  //   ),
+  // },
 ];
 
 const AboutSection = () => {
@@ -131,12 +131,6 @@ const AboutSection = () => {
                 active={tab === "certifications"}
               >
                 Certifications
-              </TabButton>
-              <TabButton
-                selectTab={() => handleTabChange("experience")}
-                active={tab === "experience"}
-              >
-                Experience
               </TabButton>
             </div>
             <div className="mt-8">
