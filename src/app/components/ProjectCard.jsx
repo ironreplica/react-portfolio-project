@@ -39,8 +39,12 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
         initial={{ rotateZ: 0, scale: 1, y: 0 }}
         transition={{ duration: 1 }}
         whileHover="hover"
-        className="h-40 md:h-72 rounded-t-xl flex-col relative group rounded-b-xl w-[100%]"
-        style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
+        className="h-40 md:h-72 rounded-t-xl flex-col relative group rounded-b-xl w-[100%] bg-center"
+        style={{
+          background: `url(${imgUrl})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
       >
         {/* <div className=" bg-green absolute top-0 left-0 z-12"></div> */}
         <div className="z-12 items-center justify-center  w-auto px-3 py-4 h-full mx-auto bg-bg md:hidden group-hover:flex flex-col group-hover:bg-opacity-90  transition-all duration-500">
@@ -61,8 +65,12 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
               <CodeBracketIcon className="h-10 w-10 text-light absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-lightest" />
             </Link>
             <Link
-              href={previewUrl}
-              className="h-14 w-14 border-2 relative rounded-full border-light hover:border-lightest group/link"
+              href={previewUrl != null ? previewUrl : "#"}
+              className={
+                previewUrl != null
+                  ? "h-14 w-14 border-2 relative rounded-full border-light hover:border-lightest group/link"
+                  : "hidden"
+              }
             >
               <EyeIcon className="h-10 w-10 text-light absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-lightest" />
             </Link>

@@ -25,6 +25,15 @@ const projectsData = [
     tag: ["All", "Games"],
     previewUrl: "https://ironreplica.itch.io/blood-moon",
   },
+  {
+    id: 3,
+    title: "Game Dev Diaries",
+    description:
+      "Game Dev Diaries is an innovative application tailored for game developers—a dynamic platform designed for sharing their game-building journey! Boasting a sleek, modern UI and robust backend functionalities including account management, seamless post creation, secure authentication, and personalized user profiles. Built with NextJS, Firebase and Tailwind",
+    image: "/images/projects/3.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/ironreplica/game-dev-diaries",
+  },
   // {
   //   id: 3,
   //   title: "Title",
