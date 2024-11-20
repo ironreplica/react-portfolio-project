@@ -1,0 +1,25 @@
+.mobile-project-card {
+  @apply font-bold;
+}
+.project-card {
+  width: 100%;
+
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.selected-featured-slideshow-img {
+  border: 1rem white;
+}
+@media (min-width: 768px) {
+  .project-card {
+    transition: all 0.3s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 30px rgba(0, 0, 0);
+  }
+}

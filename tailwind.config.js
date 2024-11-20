@@ -14,6 +14,7 @@ module.exports = {
       custom2: "#cea5fb",
       bg: "#0d1117",
       dark: "#161b22",
+      cardbg: "#12161c",
     },
     extend: {
       backgroundImage: {
