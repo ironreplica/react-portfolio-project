@@ -118,7 +118,7 @@ const ProjectsSection = () => {
                   height={100}
                   className="w-full object-cover max-h-[500px] mx-auto transition-all duration-500 lg:px-3 sm:px-0"
                 />
-                <div className="flex flex-row flex-wrap justify-center mx-auto py-3">
+                <div className="flex flex-row flex-wrap justify-around md:justify-center mx-auto py-3 my-auto">
                   {featuredProjectSlideShow.map((e, i) => (
                     <Image
                       onClick={(event) => {
@@ -126,14 +126,14 @@ const ProjectsSection = () => {
                         setSelected(i);
                         setPreviewImg(e.image);
                       }}
-                      className={` py-3 ${
+                      className={` py-3 w-full max-w-[120px] lg:max-w-[180px] my-auto ${
                         selected === i
                           ? "border-2 border-light rounded-md transition-all duration-100"
                           : ""
                       }`}
                       src={e.image}
                       key={i}
-                      width={120}
+                      width={300}
                       height={120}
                     />
                   ))}
