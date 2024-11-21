@@ -57,13 +57,12 @@ const projectsData = [
     id: 3,
     title: "Single Threat",
     description:
-      "Duis in dolor exercitation eiusmod ullamco tempor ut id aliquip consectetur mollit laboris. Labore occaecat nisi incididunt proident. Consectetur eiusmod proident dolore commodo consectetur minim duis sunt commodo eiusmod pariatur minim ex.",
+      "Single Threat is a survival base building game focused on not getting killed. By who? Zombies of course. This project is built in Unity using C# and Unity Asset Store. This is a work in progress as it is a massive project. Currently there are no playable builds as the game is in a very early development stage.",
     image: "/images/projects/4.png",
     tag: ["All", "Games"],
     previewUrl: "#",
   },
 ];
-
 const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
   const [previewImg, setPreviewImg] = useState(
