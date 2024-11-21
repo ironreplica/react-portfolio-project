@@ -25,6 +25,15 @@ const features = [
 ];
 const projectsData = [
   {
+    id: 4,
+    title: "Single Threat",
+    description:
+      "Single Threat is a survival base building game focused on not getting killed. By who? Zombies of course. This project is built in Unity using C# and Unity Asset Store. This is a work in progress as it is a massive project. Currently there are no playable builds as the game is in a very early development stage.",
+    image: "/images/projects/4.png",
+    tag: ["All", "Games"],
+    previewUrl: "#",
+  },
+  {
     id: 3,
     title: "Game Dev Diaries",
     description:
@@ -53,15 +62,6 @@ const projectsData = [
     tag: ["All", "Games"],
     previewUrl: "https://ironreplica.itch.io/blood-moon",
   },
-  {
-    id: 3,
-    title: "Single Threat",
-    description:
-      "Single Threat is a survival base building game focused on not getting killed. By who? Zombies of course. This project is built in Unity using C# and Unity Asset Store. This is a work in progress as it is a massive project. Currently there are no playable builds as the game is in a very early development stage.",
-    image: "/images/projects/4.png",
-    tag: ["All", "Games"],
-    previewUrl: "#",
-  },
 ];
 const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
@@ -86,11 +86,11 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects" className="z-10 relative mb-20">
+    <section id="projects" className="z-10 relative mb-20 text-lightest">
       <h2
         // duration={{ 0.}}
 
-        className="lg:w-[20%] sm:w-[100%] py-2 mx-auto text-center text-4xl font-bold text-lightest mt-4 z-20 top-[40px] border border-b-2 border-l-0 border-r-0 border-t-0 border-light"
+        className="lg:w-[20%] sm:w-[100%] py-2 mx-auto text-center text-4xl font-bold  mt-4 z-20 top-[40px] border border-b-2 border-l-0 border-r-0 border-t-0 border-light"
       >
         My Projects
       </h2>
@@ -119,6 +119,7 @@ const ProjectsSection = () => {
                 />
                 <div className="flex flex-row flex-wrap justify-around md:justify-center mx-auto py-3 my-auto">
                   {featuredProjectSlideShow.map((e, i) => (
+                    // ! Add Hover Effects
                     <Image
                       onClick={(event) => {
                         console.log(e.image);
